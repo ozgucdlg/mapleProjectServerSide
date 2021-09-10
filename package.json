@@ -10,6 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.3"
-  }
+    "express-handlebars": "^5.3.3",
+    "mongoose": "^6.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozgucdlg/mapleProjectServerSide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ozgucdlg/mapleProjectServerSide/issues"
+  },
+  "homepage": "https://github.com/ozgucdlg/mapleProjectServerSide#readme"
 }
