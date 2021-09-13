@@ -21,11 +21,6 @@ router.get('/products', (req, res) => {
     res.render('site/products')
 })
 
-router.post('/post/result', (req, res) => {
-    res.redirect('/')
-    console.log('test is okay')
-})
-
 
 
 module.exports= router
