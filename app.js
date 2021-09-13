@@ -18,27 +18,8 @@ app.use(express.static('public'))
 app.engine('handlebars', exphbs())
 app.set('view engine', 'handlebars')
 
-
-
-app.get('/', (req, res) => {
-    res.render('site/index')
-})
-
-app.get('/about', (req, res) => {
-    res.render('site/about')
-})
-app.get('/contact', (req, res) => {
-    res.render('site/contact')
-})
-
-app.get('/products', (req, res) => {
-    res.render('site/products')
-})
-
-
-
-
-
+const main = require('./routes/main')
+app.use('/', main)
 
 
 

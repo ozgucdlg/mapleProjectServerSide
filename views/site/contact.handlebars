@@ -46,27 +46,27 @@
     <div class="contactBody">
         <div class="container">
             <div class="wrapper">
-                <form  class="contactForm">
+                <form  class="contactForm"  action="/post/result"  method="post">
 
                     <div class="formItem">
                         <span class="formShape"> <i class="fa fa-user fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Fullname *" required>
+                        <input class="formField" name="fullname" type="text" placeholder="Fullname *" required>
                     </div>
                     <div class="formItem">
                         <span class="formShape"> <i class="fa fa-envelope fa-2x"></i></span>
-                        <input class="formField" type="email" placeholder="e-mail *" required>
+                        <input class="formField"  name="email"  type="email" placeholder="e-mail *" required>
                     </div>
                     <div class="formItem">
                         <span class="formShape"> <i class="fa fa-mobile fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Phone *" >
+                        <input class="formField" name="phone" type="text" placeholder="Phone *" >
                     </div>
                     <div class="formItem">
                         <span class="formShape"> <i class="fa fa-info fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Subject *" required>
+                        <input class="formField" name="subject" type="text" placeholder="Subject *" required>
                     </div>
                     <div class="formItem">
                         <span class="formShape"> <i class="fa fa-comment fa-2x"></i></span>
-                        <textarea class="formField" rows="8" placeholder="Message *"></textarea>
+                        <textarea class="formField" name="message" rows="8" placeholder="Message *"></textarea>
                     </div>
                     <div  class="formItem">
                         <input class="formBtn" type="submit" value="Submit">
