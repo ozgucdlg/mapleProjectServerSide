@@ -125,6 +125,19 @@ header .logo img {
     color: #fff;
 }
 
+.menu ul li ul li a  {
+    background:#500D16;
+    color: #fff;   
+}
+
+.menu ul li ul li  a:hover  {
+    background:#500D16;
+    color: #fff; 
+    font-size: 17px;  
+    transition: all 0.3s ease;
+}
+
+
 
 
 
