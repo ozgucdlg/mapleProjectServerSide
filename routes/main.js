@@ -6,10 +6,12 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
     res.render('site/index')
-})
+}) 
+
+
 router.get('/index', (req, res) => {
     res.render('site/index')
-})
+}) 
 router.get('/about', (req, res) => {
     res.render('site/about')
 })

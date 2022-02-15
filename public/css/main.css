@@ -93,7 +93,8 @@ header .logo img {
 
 .menu ul li {
     float: left;
-    position: relative;   
+    position: relative; 
+     
    
 }
 
@@ -865,7 +866,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
 
 
     header .container{
@@ -940,6 +941,32 @@ footer p {
 
 @media screen and (max-width: 540px) {
 
+  .menu ul li{
+      position : relative;
+      font-size:11px;
+      width:80px;
+      margin-left:0;
+      display: inline-block;
+  }
+
+  .menu ul li a {    
+    margin-top:5px;
+    display: block;    
+    width: 60px;    
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #333333;
+    transition: all 0.5s ease;
+    
+}
+
+.menu ul li  a:hover  {
+    background:#500D16;
+    color: #fff;   
+    margin-top:5px;
+    display: block;    
+    width: 60px;  
+}
     .caption h1 {        
         font-size:20px;
         letter-spacing: 2px;
