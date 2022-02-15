@@ -940,19 +940,31 @@ footer p {
 }
 
 @media screen and (max-width: 540px) {
+  /* yeni yapildi */
+    .menu
+  {
+    width: 390px;
+    background-color: red;
+    margin-top:10px;    
+    position: relative;
+    
+} ul {
+    
+    display: inline-block;
+    width: 100%;
 
-  .menu ul li{
+    position: relative;
+    
+}
+
+li{
       position : relative;
       font-size:11px;
-      width:80px;
-      margin-left:0;
-      display: inline-block;
+      width:95px;          
   }
-
   .menu ul li a {    
-    margin-top:5px;
-    display: block;    
-    width: 60px;    
+         
+    width: 85px;    
     text-decoration: none;
     letter-spacing: 2px;
     color: #333333;
@@ -960,13 +972,28 @@ footer p {
     
 }
 
-.menu ul li  a:hover  {
+.menu  ul li  a:hover  {
     background:#500D16;
-    color: #fff;   
-    margin-top:5px;
+    color: #fff;     
     display: block;    
-    width: 60px;  
+    width: 75px;  
 }
+/* yeni eklendi*/
+.menu ul li ul li  a:hover  {
+    background:#500D16;
+    color: #fff; 
+    width: 75px; 
+    font-size: 17px;  
+    transition: all 0.3s ease;
+
+    
+}
+/* yeni eklendi*/
+.menu ul li ul li  a:hover p{
+    font-size: 11px;
+   
+       }
+
     .caption h1 {        
         font-size:20px;
         letter-spacing: 2px;
