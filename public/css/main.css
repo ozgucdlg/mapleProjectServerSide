@@ -134,7 +134,7 @@ header .logo img {
 .menu ul li ul li  a:hover  {
     background:#500D16;
     color: #fff; 
-    font-size: 17px;  
+    font-size: 15px;  
     transition: all 0.3s ease;
 }
 
@@ -162,7 +162,7 @@ header .logo img {
 .caption {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     width: 100%;
     color: #fff;
@@ -880,7 +880,8 @@ footer p {
 
 
     .caption h1{
-        color:red;
+       
+        color:white;
         font-size:28px;
         letter-spacing: 2px;
 
@@ -944,7 +945,7 @@ footer p {
     .menu
   {
     width: 390px;
-    background-color: red;
+    /* background-color: red; */
     margin-top:10px;    
     position: relative;
     
@@ -952,7 +953,6 @@ footer p {
     
     display: inline-block;
     width: 100%;
-
     position: relative;
     
 }
@@ -967,7 +967,7 @@ li{
     width: 85px;    
     text-decoration: none;
     letter-spacing: 2px;
-    color: #333333;
+    color: #500D16;
     transition: all 0.5s ease;
     
 }
@@ -992,7 +992,7 @@ li{
 .menu ul li ul li  a:hover p{
     font-size: 11px;
    
-       }
+}
 
     .caption h1 {        
         font-size:20px;
@@ -1004,11 +1004,30 @@ li{
 
     }
 
+
+    /* yeni eklendi */
+    .caption {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-end;
+        width: 100%;
+        color: #fff;
+    
+    }
+        /* yeni eklendi */
+    #mainSlider {
+        height: 600px;
+        background: url(../img/sampleRender.jpg) center center  no-repeat; 
+        background-size: cover;
+    }
+    
     .engineBody .container .col2{
         width: 100%;
 
     }
     .sectionHeader {
+        
         font-size: 20px;
     }
     .contactForm {
