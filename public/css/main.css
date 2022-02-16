@@ -5,6 +5,8 @@
     src: url('../fonts/Raleway-Regular.ttf');
 }
 body {
+
+    width: 100%;
     background: #fff;
     color: #3f3f3f;
     font: 14px / 28px arial;
@@ -47,7 +49,7 @@ h3{
 /* GRID  SETTINGS */
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 
@@ -940,11 +942,39 @@ footer p {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+/*  MOBILE   */
+
+
+
+
 @media screen and (max-width: 540px) {
-  /* yeni yapildi */
+
+    body{
+        float: left;
+    }
+
+
+  /* yeni yapildi   INDEX PAGE */
+
+
+
+
+
+
+  /*  navigation bar */
     .menu
   {
-    width: 390px;
+    width: 100%;   /* 390px*/
     /* background-color: red; */
     margin-top:10px;    
     position: relative;
@@ -994,6 +1024,13 @@ li{
    
 }
 
+
+
+
+
+
+
+/*  Index  sayfasi  */
     .caption h1 {        
         font-size:20px;
         letter-spacing: 2px;
