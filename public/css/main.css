@@ -11,6 +11,7 @@ body {
     color: #3f3f3f;
     font: 14px / 28px arial;
     font-family: 'Raleway';
+    overflow-x: hidden;
 
 }
 
@@ -89,6 +90,7 @@ header .logo {
 header .logo img {
     display: block;
     height:70px;
+    margin-left:20px;
 }
 
 
@@ -138,6 +140,14 @@ header .logo img {
     color: #fff; 
     font-size: 15px;  
     transition: all 0.3s ease;
+
+   
+}
+
+.menu ul li ul li  a:hover p {
+
+    font-size: 11px;
+   
 }
 
 
@@ -583,8 +593,9 @@ footer p {
 }
 
 .caption p {
-    width: 800px;
+    width: 80%;
     text-align: center;
+    
 }
 
 #ourHistory {
