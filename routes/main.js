@@ -23,6 +23,15 @@ router.get('/products', (req, res) => {
     res.render('site/products')
 })
 
+router.get('/admin', (req, res) => {
+    res.render('site/admin')
+})
+
+router.get('/login', (req, res) => {
+    res.render('site/login')
+})
+
+
 
 
 
