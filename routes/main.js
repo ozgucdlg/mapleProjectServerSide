@@ -33,6 +33,9 @@ router.get('/login', (req, res) => {
 router.get('/productsAdmin', (req, res) => {
     res.render('site/productsAdmin')
 })
+router.get('/addNewItemPage', (req, res) => {
+    res.render('site/addNewItemPage')
+})
 
 
 

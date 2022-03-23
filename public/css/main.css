@@ -1095,6 +1095,66 @@ footer p {
 }
 
 
+/* New Item Page*/
+
+.newItemPage {
+    width:100%;
+    height:1000px;
+    background:#95a5a6;
+    position:relative;
+    
+}
+
+.newItemPageContainer{
+    width: 80%;
+    height:80%;
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 150px; 
+    background-color:white;
+    border-radius:10px;
+}
+.newItemTitle{
+    padding-top: 20px;
+    text-align:center;
+    color:#550D16;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom: 2px;
+}
+
+.newItemTitleInput{
+    width: 90%;
+    margin-left:45px;
+    margin-right: 25px;
+    border:2px solid #500D16;
+ 
+}
+.newItemDescription{
+
+    width: 90%;
+    height:200px;
+    margin-left:45px;
+    margin-right: 25px;
+    border:2px solid #500D16;
+
+}
+
+.newItemButtons{
+
+    margin-top:30px;
+    margin-left: 500px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /*  MOBILE   */
