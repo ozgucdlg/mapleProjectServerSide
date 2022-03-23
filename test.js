@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 
 const Post = require('./models/Post')
 const Admin = require('./models/Admin')
+const Products = require('./models/Products')
 
 
 mongoose.connect('mongodb://127.0.0.1:/maplePrecastInc', {
@@ -17,6 +18,26 @@ mongoose.connect('mongodb://127.0.0.1:/maplePrecastIncAdmin', {
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
+
+
+/* products
+*/
+mongoose.connect('mongodb://127.0.0.1:/maplePrecastIncProducts', {
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+})
+
+Products.create({
+    title:'admin',
+    date:'23 mart 2022',
+    description:"this is test script",
+    file:"lkvhaejkrhvkjehhebjhb"
+   
+    
+}, (error,post) =>{
+    console.log(error,post)
+
+}) 
 
 
 
@@ -35,7 +56,7 @@ mongoose.connect('mongodb://127.0.0.1:/maplePrecastIncAdmin', {
 
 }) */
 
-Admin.create({
+/* Admin.create({
     username:'admin',
     userpassword:'admin@gmail.com',
    
@@ -44,5 +65,5 @@ Admin.create({
     console.log(error,post)
 
 }) 
-
+ */
 
