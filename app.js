@@ -22,10 +22,23 @@ app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({ extended:false }))
 app.use(bodyParser.json())
 
+
 const main = require('./routes/main')
-const posts = require('./routes/posts')
 app.use('/', main)
+
+
+const posts = require('./routes/posts')
 app.use('/posts', posts)
+
+const products = require('./routes/products')
+app.use('/productsAdmin', products)
+
+
+
+
+
+
+
 
 
 

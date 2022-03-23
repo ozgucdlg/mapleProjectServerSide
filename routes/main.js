@@ -24,18 +24,27 @@ router.get('/products', (req, res) => {
 })
 
 router.get('/admin', (req, res) => {
-    res.render('site/admin')
+    res.render('site/admin');
+   
 })
 
-router.get('/login', (req, res) => {
-    res.render('site/login')
-})
+
 router.get('/productsAdmin', (req, res) => {
     res.render('site/productsAdmin')
 })
 router.get('/addNewItemPage', (req, res) => {
     res.render('site/addNewItemPage')
 })
+
+
+
+
+
+
+router.get('/login', (req, res) => {
+    res.render('site/login')
+})
+
 
 
 

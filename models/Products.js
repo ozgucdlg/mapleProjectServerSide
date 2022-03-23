@@ -10,4 +10,4 @@ const PostSchemaItem= new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('addNewItemPage', PostSchemaItem)
+module.exports = mongoose.model('Products', PostSchemaItem)
