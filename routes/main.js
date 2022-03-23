@@ -30,6 +30,9 @@ router.get('/admin', (req, res) => {
 router.get('/login', (req, res) => {
     res.render('site/login')
 })
+router.get('/productsAdmin', (req, res) => {
+    res.render('site/productsAdmin')
+})
 
 
 

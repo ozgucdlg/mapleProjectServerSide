@@ -453,6 +453,7 @@ footer p {
  .inspectText{
      width:60%;
      padding-left: 10px;
+     position: relative;
      
 
  }
@@ -1044,10 +1045,54 @@ footer p {
 
 
 
+/* Produts admin page */
+
+
+.btnEkleAdminPage{
+
+    width:100%;   
+    height:50px;         
+    color: white;
+    background-color: green;
+
+}
 
 
 
+.btnposition{
+    width:98%;
+    display:flex;
+    flex-direction:row;
+    position:absolute;   
+    bottom:0px;
+    justify-content:space-between;
+}
 
+.btnDeleteteAdmin{
+
+    width:30%;
+    border-radius:10px;
+    border:3px solid  red;
+    background-color:white;
+    color:red;      
+}
+.btnDeleteteAdmin:hover{
+    background-color:red;
+    color:white;        
+}
+
+.btnUpdateAdmin{
+    width:30%;
+    border-radius:10px;
+    border:3px solid  yellow;
+    background-color:white;
+    color:rgb(255, 238, 0);           
+}
+
+.btnUpdateAdmin:hover{
+    background:yellow;
+    color:white;
+}
 
 
 
