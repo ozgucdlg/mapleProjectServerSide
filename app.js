@@ -24,14 +24,11 @@ app.use(bodyParser.json())
 
 
 const main = require('./routes/main')
-app.use('/', main)
-
-
 const posts = require('./routes/posts')
+app.use('/', main)
 app.use('/posts', posts)
 
-const products = require('./routes/products')
-app.use('/productsAdmin', products)
+
 
 
 

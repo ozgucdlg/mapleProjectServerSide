@@ -5,9 +5,10 @@ const Post = require('../models/Post')
 
 
 
+
 router.post('/test', (req, res) => {    
     // res.redirect('/')
-    // console.log('test is okay')
+     //console.log('test is okay')
     // console.log(req.body)
     
     Post.create(req.body)
