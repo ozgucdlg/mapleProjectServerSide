@@ -13,9 +13,7 @@ mongoose.connect('mongodb://127.0.0.1:/maplePrecastInc', {
     useUnifiedTopology:true
 })
 
-app.use(fileUpload({
-    limits: { fileSize: 50 * 1024 * 1024 },
-  }));
+app.use(fileUpload());
 
 
 app.use(express.static('public'))
