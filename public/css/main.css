@@ -1150,11 +1150,208 @@ footer p {
 
 
 
+/*        blog sayfasi ayarlari   */
+.mainContainer{
+
+    width: 95%;
+    height: 400px;
+    border:2px solid #500D16;
+    border-radius:20px;
+    background-color: rgb(156, 151, 151);
+    margin-left:2.5%;
+    margin-top:40px;
+    display:flex;
+    flex-direction: row;
+}
+
+.leftSide{
+    flex:6;
+    background:#e9e6e6;
+    border-radius:20px;
+    border-radius:20px 0px 0px 20px;
+      
+      
+}
+
+.photoAlbum{
+    display:flex;
+    height:100%;
+    flex-direction: column;     
+    
+
+}
+.firstLine{
+    flex:1;   
+    border-radius:20px 20px 20px 20px; 
+    width:99%;
+    height:99%;
+    margin-left:0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
+    display:flex;
+    flex-direction: row;
+}
+
+.firstLinePhoto1{
+    flex:1;    
+    background-image: url("../img/banding1.jpg");
+    width:280px;
+    height: 190px;
+    object-fit:fill;
+    border-radius:20px ;
+    margin-right: 5px;
+    border: 1px solid #500D16;
+
+}
+
+.firstLinePhoto2{
+    flex:1;
+    background:black;  
+    background-image: url("../img/banding3.jpg");
+    object-fit:cover;
+    border-radius:20px;
+    border: 1px solid #500D16;
+
+    
+}
+.secondLine{
+    flex:1;   
+    border-radius:20px 20px 20px 20px; 
+    width:99%;
+    height:99%;
+    margin-left:0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
+    display:flex;
+    flex-direction: row;
+}
+
+.secondLinePhoto1{
+    flex:1;
+    background:black;  
+    background-image: url("../img/inspect7.jpg");
+    object-fit:cover;
+    border-radius:20px ;
+    margin-right: 5px;
+    border: 1px solid #500D16;
+
+}
+
+.secondLinePhoto2{
+    flex:1;
+    background:black;  
+    background-image: url("../img/ceo.png");
+    object-fit:cover;
+    border-radius:20px ;
+    margin-right: 5px;
+    border: 1px solid #500D16;
+}
 
 
 
+.rightSide{
+    flex:9;
+    background:#e9e6e6;
+    border-radius:0px 20px 20px 0px;
+    display:flex;
+    flex-direction:column;
+     
+}
+.mainFrameUp{
+    flex:1;
+    width: 99%;
+    margin-top:0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background: linear-gradient( to left, #3d0109, #cec6c6);
+    border-radius:10px;
+    opacity: 0.95;
+}
+
+.tarih{
+    color: #3d0101;
+     font-size:14px;
+     font-weight:bold;
+     font-style: italic;          
+     padding-left: 10px;         
+     z-index: -1;
+}
+
+.mainFrameUpTitle{
+    text-align: center;
+    font-weight:bold;
+    font-size:18px;
+    color:#eeecec;
+}
+
+.mainFrameDown{
+    flex: 4;
+    width: 99%;    
+    margin-top:0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;    
+    border-radius:10px;
+    opacity: 0.95;
+
+}
 
 
+.mainFrameDownText{
+    text-align:justify;
+    overflow: hidden;
+}
+
+
+.buttonsFrame{
+    flex: 1;
+    display:flex;
+    flex-direction:row;
+}
+
+.deleteBTN{
+    flex: 1;
+    width:50%;
+    background-color:white;
+    color:red;
+    border-radius:10px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size:16px;
+    font-weight:bold;
+    
+
+}
+
+.deleteBTN:hover {
+    flex: 1;
+    width:50%;
+    background-color:red;
+    color:white;
+    
+
+}
+.updateBTN {
+    flex: 1;
+    width:50%;
+    background-color:white;
+    color:Blue;
+    border-radius:10px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size:16px;
+    font-weight:bold;
+
+}
+.updateBTN:hover {
+    flex: 1;
+    width:50%;
+    background-color:Blue;
+    color:white
+
+}
 
 
 /*  MOBILE   */

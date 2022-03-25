@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const Product = require('../models/Products')
 
 
 
@@ -20,7 +21,15 @@ router.get('/contact', (req, res) => {
 })
 
 router.get('/products', (req, res) => {
-    res.render('site/products')
+
+        Product.find({}).then(prodcuts => {
+            res.render('site/products', {
+                prodcuts:prodcuts.map(product=> product.toJSON())});
+        })    
+   
+       
+    
+    
 })
 
 router.get('/admin', (req, res) => {
@@ -32,17 +41,28 @@ router.get('/login', (req, res) => {
 })
 
 
+
+/* ADMIN PANELI CRUD APPLICATIONLARI */
+
+
 /* ilk yazilan gidecegi yer ikincisi ise sitenin icinde calitiracagi component */
 router.get('/productsAdmin', (req, res) => {    
-    res.render('site/productsAdmin')
+   
+    Product.find({}).then(prodcuts => {
+        res.render('site/productsAdmin', {
+            prodcuts:prodcuts.map(product=> product.toJSON())});
+    })  
 })
 router.get('/addNewItemPage', (req, res) => {
     res.render('site/addNewItemPage')
 })
 
 router.post('/productsAdmin', (req, res) => {   
-    console.log(req.body) 
-    res.render('site/productsAdmin')
+    Product.create(req.body) 
+    console.log(req.body)
+    res.redirect('/productsAdmin')
+
+    
 })
 
 

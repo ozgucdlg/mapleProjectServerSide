@@ -65,6 +65,8 @@ mongoose.connect('mongodb://127.0.0.1:/maplePrecastIncProducts', {
 })
 /*                                 CREATE ISLEMI                    */
 
+
+/*
 Products.create({
     title:'admin',
     date:'23 mart 2022',
@@ -75,7 +77,10 @@ Products.create({
 }, (error,Products) =>{
     console.log(error,Products)
 
-}); 
+}); */
+
+
+
 
 /*                                 UPDATE ISLEMI                    */
  /* Products.findByIdAndUpdate('623b3311b94e91da6be000ee',{
