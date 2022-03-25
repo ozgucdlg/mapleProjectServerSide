@@ -5,12 +5,17 @@ const port = 3000;
 const hostName = '127.0.0.1'
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
+const fileUpload = require('express-fileupload')
 
 
 mongoose.connect('mongodb://127.0.0.1:/maplePrecastInc', {
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
+
+app.use(fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 },
+  }));
 
 
 app.use(express.static('public'))

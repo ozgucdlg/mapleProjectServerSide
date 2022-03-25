@@ -1195,7 +1195,19 @@ footer p {
 
 .firstLinePhoto1{
     flex:1;    
-    background-image: url("../img/banding1.jpg");
+   /*  background-image: url("../img/banding1.jpg"); */
+    width:280px;
+    height: 190px;
+    object-fit:fill;
+    border-radius:20px ;
+    margin-right: 5px;
+    border: 1px solid #500D16;
+    display: flex;
+    flex-direction: row;
+
+}
+.firstLineImg1{
+    flex:1;
     width:280px;
     height: 190px;
     object-fit:fill;
@@ -1203,12 +1215,12 @@ footer p {
     margin-right: 5px;
     border: 1px solid #500D16;
 
-}
+} 
 
 .firstLinePhoto2{
     flex:1;
-    background:black;  
-    background-image: url("../img/banding3.jpg");
+    
+    /* background-image: url("../img/banding3.jpg"); */
     object-fit:cover;
     border-radius:20px;
     border: 1px solid #500D16;
@@ -1230,8 +1242,8 @@ footer p {
 
 .secondLinePhoto1{
     flex:1;
-    background:black;  
-    background-image: url("../img/inspect7.jpg");
+     
+   /* background-image: url("../img/inspect7.jpg");*/
     object-fit:cover;
     border-radius:20px ;
     margin-right: 5px;
@@ -1241,8 +1253,8 @@ footer p {
 
 .secondLinePhoto2{
     flex:1;
-    background:black;  
-    background-image: url("../img/ceo.png");
+   
+    /* background-image: url("../img/ceo.png"); */
     object-fit:cover;
     border-radius:20px ;
     margin-right: 5px;

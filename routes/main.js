@@ -1,3 +1,4 @@
+const path= require('path')
 const express = require('express')
 const router = express.Router()
 const Product = require('../models/Products')
@@ -58,9 +59,18 @@ router.get('/addNewItemPage', (req, res) => {
 })
 
 router.post('/productsAdmin', (req, res) => {   
-    Product.create(req.body) 
+
+    let post_Image = req.files.post_Image
+    post_Image.mv(path.resolve(__dirname, '../public/img/postimages', post_Image.name))
+    Product.create({
+        ...req.body, 
+        post_Image:`/img/postimages/${post_Image.name}`
+    }) 
     console.log(req.body)
+    console.log(req.files.post_Image)
     res.redirect('/productsAdmin')
+
+    
 
     
 })
