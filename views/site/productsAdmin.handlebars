@@ -12,6 +12,7 @@
 {{#each prodcuts}}
 
 <div class="mainContainer">
+    {{!-- {{_id}} --}}
     <div class="leftSide">
         <div class="photoAlbum">
             <div class="firstLine">
@@ -35,7 +36,7 @@
 
     <div class="rightSide">
         <div class="mainFrameUp">
-            <p class="tarih">{{date}}</p>
+            <p class="tarih">{{generateDate date 'MM YYYY'}}</p>
             <p class="mainFrameUpTitle">{{title}}</p>
         </div>
         <div class="mainFrameDown">
@@ -43,8 +44,19 @@
         </div>
 
         <div class="buttonsFrame">
-            <button  class="deleteBTN">DELETE</button>
-            <button class="updateBTN">UPDATE</button>
+
+            <form  action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
+            <input  class="deleteBTN" type="hidden" name="_method" value="DELETE">
+            <button  type="submit" {{!-- class="deleteBTN" --}} class ="btn btn-danger" name="_method"  >DELETE</button>           
+            </form>
+
+            <form  action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
+            <input   class="deleteBTN" type="hidden" name="_method" value="DELETE">
+            <button   type="submit" {{!-- class="deleteBTN" --}} class ="btn btn-warning" name="_method"  >UPDATE</button>           
+            </form>
+
+
+           {{!--  <button class="updateBTN">UPDATE</button> --}}
         </div>
     </div>
 

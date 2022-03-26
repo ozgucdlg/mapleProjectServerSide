@@ -34,16 +34,22 @@ router.get('/products', (req, res) => {
 })
 
 router.get('/admin', (req, res) => {
+    
     res.render('site/admin');
    
 })
 router.get('/login', (req, res) => {
+    
     res.render('site/login')
 })
 
 
+/*----------------------------------------------------- ADMIN PANELI  CRUD APPLICATIONLARI---------------------------------------------- */
+ 
+router.get('/addNewItemPage', (req, res) => {
+    res.render('site/addNewItemPage')
+})
 
-/* ADMIN PANELI CRUD APPLICATIONLARI */
 
 
 /* ilk yazilan gidecegi yer ikincisi ise sitenin icinde calitiracagi component */
@@ -51,34 +57,12 @@ router.get('/productsAdmin', (req, res) => {
    
     Product.find({}).then(prodcuts => {
         res.render('site/productsAdmin', {
-            prodcuts:prodcuts.map(product=> product.toJSON())});
+           prodcuts:prodcuts.map(product=> product.toJSON()) });
     })  
 })
-router.get('/addNewItemPage', (req, res) => {
-    res.render('site/addNewItemPage')
-})
 
-router.post('/productsAdmin', (req, res) => {   
-   /*  let sampleFile;
-    let uploadPath;
-
-  if (!req.files || Object.keys(req.files).length === 0) {
-    return res.status(400).send('No files were uploaded.');
-  }
-
-  sampleFile = req.files.sampleFile;
-  uploadPath = __dirname + '../public/img/postimages', post_Image.name + post_ImageSecond.name +post_ImageThird.name +post_ImageFourth.name;
-
-  sampleFile.mv(uploadPath, function(err) {
-    if (err)
-      return res.status(500).send(err);
-
-      console.log(req.body)
-      console.log(req.files.post_Image)
-      res.redirect('/productsAdmin')
-  });
-}); */
-
+/* coklu fotograf ekleme */
+router.post('/productsAdmin', (req, res) => {     
 
     let post_Image = req.files.post_Image
     let post_ImageSecond = req.files.post_ImageSecond
@@ -105,6 +89,15 @@ router.post('/productsAdmin', (req, res) => {
     res.redirect('/productsAdmin')    
     
 })
+
+
+/* delete islemi */
+router.delete('/productsAdmin/:id', (req, res) => {
+    Product.deleteOne({id:req.params.id}).then(() => {
+        res.redirect('/productsAdmin')        
+    })
+}) 
+ 
 
 
 

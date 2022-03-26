@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const PostSchemaItem= new mongoose.Schema({
+    // _id:{type:"string", required:true},
     title:{type:"string",required:true},  
     description:{type:"string",required:true}, 
     post_Image:{type:"string",required:true}, 
@@ -13,4 +14,4 @@ const PostSchemaItem= new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('Prodcuts', PostSchemaItem)
+module.exports = mongoose.model('prodcut', PostSchemaItem)
