@@ -561,6 +561,9 @@
 
 
 
+ 
+
+
 
 
 
@@ -602,7 +605,11 @@
 
 
 
-        {{#each prodcuts}}
+
+
+
+
+    {{#each prodcuts}}
 
     <div class="mainContainer">
         <div class="leftSide">
@@ -628,7 +635,7 @@
 
         <div class="rightSide">
             <div class="mainFrameUp">
-                <p class="tarih">{{date}}</p>
+                <p class="tarih">{{generateDate date 'MM YYYY'}}</p>
                 <p  class="mainFrameUpTitle">{{title}}</p>
             </div>
             <div class="mainFrameDown">
@@ -638,5 +645,9 @@
     </div>
 
     {{/each}}
+
+
+
+       
 
 </section>

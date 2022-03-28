@@ -16,19 +16,19 @@
     <div class="leftSide">
         <div class="photoAlbum">
             <div class="firstLine">
-                <div class="firstLinePhoto1" >
-                    <img  src="{{post_Image}}" class="firstLineImg1">
+                <div class="firstLinePhoto1">
+                    <img src="{{post_Image}}" class="firstLineImg1">
                 </div>
                 <div class="firstLinePhoto2">
-                    <img  src="{{post_ImageSecond}}" class="firstLineImg1">
+                    <img src="{{post_ImageSecond}}" class="firstLineImg1">
                 </div>
             </div>
             <div class="secondLine">
                 <div class="secondLinePhoto1">
-                    <img  src="{{post_ImageThird}}" class="firstLineImg1">
+                    <img src="{{post_ImageThird}}" class="firstLineImg1">
                 </div>
                 <div class="secondLinePhoto2">
-                    <img  src="{{post_ImageFourth}}" class="firstLineImg1">
+                    <img src="{{post_ImageFourth}}" class="firstLineImg1">
                 </div>
             </div>
         </div>
@@ -45,18 +45,21 @@
 
         <div class="buttonsFrame">
 
-            <form  action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
-            <input  class="deleteBTN" type="hidden" name="_method" value="DELETE">
-            <button  type="submit" {{!-- class="deleteBTN" --}} class ="btn btn-danger" name="_method"  >DELETE</button>           
+            <form action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
+                <input  type="hidden" name="_method" value="DELETE">
+                <button type="submit" {{!-- class="deleteBTN" --}} class="btn btn-danger" name="_method">DELETE</button>
             </form>
 
-            <form  action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
-            <input   class="deleteBTN" type="hidden" name="_method" value="DELETE">
-            <button   type="submit" {{!-- class="deleteBTN" --}} class ="btn btn-warning" name="_method"  >UPDATE</button>           
+            {{!--
+            <form action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
+                <input class="deleteBTN" type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-warning" name="_method">UPDATE</button>
             </form>
+            --}}
 
 
-           {{!--  <button class="updateBTN">UPDATE</button> --}}
+
+            {{!-- <button class="updateBTN">UPDATE</button> --}}
         </div>
     </div>
 

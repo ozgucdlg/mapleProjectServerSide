@@ -97,6 +97,12 @@ router.delete('/productsAdmin/:id', (req, res) => {
         res.redirect('/productsAdmin')        
     })
 }) 
+
+router.delete('/products/:id', (req, res) => {
+    Product.deleteOne({id:req.params.id}).then(() => {
+        res.redirect('/product')        
+    })
+}) 
  
 
 

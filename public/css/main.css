@@ -334,6 +334,9 @@ header .logo img {
 footer{
     background: #500D16;
     text-align: center;
+    
+   
+   
 
 }
 
@@ -1156,8 +1159,7 @@ footer p {
     width: 95%;
     height: 400px;
     border:2px solid #500D16;
-    border-radius:20px;
-    background-color: rgb(156, 151, 151);
+    border-radius:20px;    
     margin-left:2.5%;
     margin-top:40px;
     display:flex;
@@ -1387,7 +1389,8 @@ footer p {
 @media screen and (max-width: 540px) {
 
     body{
-        float: left;
+        
+        height: auto;
     }
 
 
@@ -1499,6 +1502,161 @@ li{
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+    /*  admin paneli mobile responsive design */
+
+   
+
+
+    .mainContainer {    
+          
+        width: 96%;
+        margin: 20px auto;
+        display:flex;
+        flex-direction: column;  
+        height: auto;      
+
+    }
+
+    .leftSide{
+        
+        flex:6;
+        width: 100%;
+        display:flex;
+        flex-direction:column; 
+        border-radius: 20px;
+        
+
+    }
+
+    .photoAlbum{
+        flex:2;
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        
+    }
+
+    .firstLine{
+        flex:2;
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        
+        
+    }
+
+    .firstLinePhoto1{
+        width: 100%;        
+        flex: 1;  
+        
+        margin-bottom: 5px; 
+        
+        
+
+        
+    }    
+    .firstLineImg1 { 
+        width: 100%; 
+         
+        
+        
+
+    }
+    .firstLineImg2 { 
+        width: 100%;   
+        
+        
+        
+
+    }
+
+    
+    .secondLine{
+        flex:2;
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        background-color: white;
+        
+        
+    }
+
+    .secondLinePhoto1{
+        width: 100%;        
+        flex: 1;  
+        margin-bottom: 5px; 
+        
+
+        
+
+        
+    }    
+    .secondLineImg1 { 
+        width: 100%;    
+        transition:  0;    
+        
+
+    }
+        .rightSide{
+        width: 100%; 
+        flex:6;
+        display: flex;
+        flex-direction:column;
+        border-radius: 20px;
+    }
+
+    .mainFrameUp{
+        width: 98%;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        flex-direction:column;
+    }
+    .tarih{
+        width: 100%;
+        flex: 1;
+
+    }
+    .mainFrameUpTitle{
+        
+        width: 98%;
+        margin:10px auto;
+        
+        flex: 1;
+
+
+    }
+
+
+    .mainFrameDown{
+        width: 99%;
+        margin:10px auto;
+    }
+
+
+    .mainFrameDownText{
+
+        width: 98%;
+        margin:10px auto;
+
+    }
+
+
+   
+
+
+   
 }
 
 
