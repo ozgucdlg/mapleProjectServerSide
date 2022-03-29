@@ -1,6 +1,5 @@
 /* GRENERAL SETTINGS */
 
-
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.ttf');
@@ -334,9 +333,6 @@ header .logo img {
 footer{
     background: #500D16;
     text-align: center;
-    
-   
-   
 
 }
 
@@ -456,7 +452,6 @@ footer p {
  .inspectText{
      width:60%;
      padding-left: 10px;
-     position: relative;
      
 
  }
@@ -852,111 +847,6 @@ footer p {
     background: #841916;
 }
 
-
-/*  MEDIA QURIES*/
-
-@media screen and (max-width: 960px) {
-    .caption h1{        
-        font-size:32px;
-        letter-spacing: 2px;
-    }   
-    
-    footer .fa {
-        font-size:24px;
-        
-    }
-    footer h3 {
-        font-size:16px;
-    }
-    .inspectBody .container{
-        flex-direction:column;
-
-    }
-    .inspectBody .container  .col2{
-        width: 100%;
-    }
-    .ourHistoryBody  .col2{
-        flex-direction:column;
-        width: 100%;
-        margin-left:10px;
-        margin-right:10px;
-
-    }
-}
-
-@media screen and (max-width: 740px) {
-
-
-    header .container{
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    }
-    header  .logo {
-        margin: 0 auto;
-    }
-
-
-    .caption h1{
-       
-        color:white;
-        font-size:28px;
-        letter-spacing: 2px;
-
-    }
-    .featuresBody  .container{
-        flex-direction:column;
-
-    }
-    .featuresBody .container  .col3 {
-        width: 80%;
-        margin: 0 auto;        
-
-    } 
-    .egineBody  .container {
-        flex-direction:column;
-
-    }
-
-    .egineBody  .container  .col2 {
-        width: 80%;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 auto;        
-    }
-
-    .footer  .container {
-        flex-direction: column;
-
-    }
-    .footer  .container .col3 {
-        width: 100%;
-        
-    } 
-    .sectionHeader {
-        font-size:24px;
-
-    }  
-
-    .inspectBody .container .col2{
-        padding-left:0;
-        padding-right:0;
-
-    }
-    .teamMemberInfo {
-        font-size:14px;
-        padding: 10px;
-        
-    }
-    .teamTitle {
-        font-size:14px;
-
-    }
-    .formShape {
-        display: none;
-    }
-
-}
 
 
 /* ADMIN SAYFASI */
@@ -1381,6 +1271,119 @@ footer p {
 }
 
 
+
+
+
+
+
+/* ***************************************************************  MEDIA QURIES************************* */
+
+@media screen and (max-width: 960px) {
+    .caption h1{        
+        font-size:32px;
+        letter-spacing: 2px;
+    }   
+    
+    footer .fa {
+        font-size:24px;
+        
+    }
+    footer h3 {
+        font-size:16px;
+    }
+    .inspectBody .container{
+        flex-direction:column;
+
+    }
+    .inspectBody .container  .col2{
+        width: 100%;
+    }
+    .ourHistoryBody  .col2{
+        flex-direction:column;
+        width: 100%;
+        margin-left:10px;
+        margin-right:10px;
+
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+
+    header .container{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    header  .logo {
+        margin: 0 auto;
+    }
+
+
+    .caption h1{
+       
+        color:white;
+        font-size:28px;
+        letter-spacing: 2px;
+
+    }
+    .featuresBody  .container{
+        flex-direction:column;
+
+    }
+    .featuresBody .container  .col3 {
+        width: 80%;
+        margin: 0 auto;        
+
+    } 
+    .egineBody  .container {
+        flex-direction:column;
+
+    }
+
+    .egineBody  .container  .col2 {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;        
+    }
+
+    .footer  .container {
+        flex-direction: column;
+
+    }
+    .footer  .container .col3 {
+        width: 100%;
+        
+    } 
+    .sectionHeader {
+        font-size:24px;
+
+    }  
+
+    .inspectBody .container .col2{
+        padding-left:0;
+        padding-right:0;
+
+    }
+    .teamMemberInfo {
+        font-size:14px;
+        padding: 10px;
+        
+    }
+    .teamTitle {
+        font-size:14px;
+
+    }
+    .formShape {
+        display: none;
+    }
+
+}
+
+
+
+
 /*  MOBILE   */
 
 
@@ -1390,7 +1393,7 @@ footer p {
 
     body{
         
-        height: auto;
+        height: left;
     }
 
 
@@ -1404,7 +1407,7 @@ footer p {
   /*  navigation bar */
     .menu
   {
-    width: 100%;   /* 390px*/
+    width:   390px;
     /* background-color: red; */
     margin-top:10px;    
     position: relative;
@@ -1461,7 +1464,7 @@ li{
 
 
 /*  Index  sayfasi  */
-    .caption h1 {        
+     .caption h1 {        
         font-size:20px;
         letter-spacing: 2px;
     }
@@ -1469,7 +1472,7 @@ li{
         width: 100%;
         margin: 0 auto;       
 
-    }
+    } 
 
 
     /* yeni eklendi */
@@ -1512,6 +1515,32 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     /*  admin paneli mobile responsive design */
 
