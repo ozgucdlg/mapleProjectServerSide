@@ -46,13 +46,15 @@ router.get('/login', (req, res) => {
 
 /*----------------------------------------------------- ADMIN PANELI  CRUD APPLICATIONLARI---------------------------------------------- */
  
+
+/* routing to post yukleme sayfasi */
 router.get('/addNewItemPage', (req, res) => {
     res.render('site/addNewItemPage')
 })
 
 
 
-/* ilk yazilan gidecegi yer ikincisi ise sitenin icinde calitiracagi component */
+/* ilk yazilan gidecegi yer ikincisi ise sitenin icinde calitiracagi component ururn ekleme */
 router.get('/productsAdmin', (req, res) => {    
    
     Product.find({}).then(prodcuts => {
@@ -93,13 +95,14 @@ router.post('/productsAdmin', (req, res) => {
 
 /* delete islemi */
 router.delete('/productsAdmin/:id', (req, res) => {
-    Product.deleteOne({id:req.params.id}).then(() => {
+    Product.findByIdAndDelete({id:req.params.id}).then(() => {
         res.redirect('/productsAdmin')        
     })
 }) 
 
 router.delete('/products/:id', (req, res) => {
-    Product.deleteOne({id:req.params.id}).then(() => {
+    Product.findByIdAndDelete({id:req.params.id}).then(() => {
+        console.log(req.body)
         res.redirect('/product')        
     })
 }) 

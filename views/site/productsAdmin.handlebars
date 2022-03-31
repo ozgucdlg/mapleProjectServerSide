@@ -12,7 +12,7 @@
 {{#each prodcuts}}
 
 <div class="mainContainer">
-    {{!-- {{_id}} --}}
+{{!-- {{_id}}   --}}
     <div class="leftSide">
         <div class="photoAlbum">
             <div class="firstLine">
@@ -45,10 +45,10 @@
 
         <div class="buttonsFrame">
 
-            <form action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
+             <form action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
                 <input  type="hidden" name="_method" value="DELETE">
-                <button type="submit" {{!-- class="deleteBTN" --}} class="btn btn-danger" name="_method">DELETE</button>
-            </form>
+                <button type="submit" {{!-- class="deleteBTN" --}}   class="btn btn-danger" name="_method">DELETE</button>
+            </form> 
 
             {{!--
             <form action="/productsAdmin/prodcuts/{{id}}?_method=DELETE" method="POST">
@@ -113,7 +113,7 @@
                         <div class="btnposition">
                             <button class="btnDeleteteAdmin">DELETE</button>
                             <button class="btnUpdateAdmin">UPDATE</button>
-                        </div>
+                        </div> 
 
                     </div>
                 </div>

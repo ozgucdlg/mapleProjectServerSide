@@ -972,7 +972,7 @@ footer p {
 .btnDeleteteAdmin:hover{
     background-color:red;
     color:white;        
-}
+} 
 
 .btnUpdateAdmin{
     width:30%;
@@ -985,7 +985,7 @@ footer p {
 .btnUpdateAdmin:hover{
     background:yellow;
     color:white;
-}
+} 
 
 
 /* New Item Page*/
